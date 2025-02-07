@@ -1,0 +1,23 @@
+/* App.css */
+
+.game-container {
+  display: grid; 
+  grid-template-columns: repeat(3, 1fr); 
+  gap: 10px; 
+  margin: 20px auto; 
+  max-width: 300px; 
+
+}
+
+.cell {
+  columns: white ;
+  width: 100%; 
+  height: 100px; 
+}
+
+.box {
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  height: 100px; 
+}

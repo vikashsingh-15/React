@@ -1,0 +1,28 @@
+
+.card-group {
+    display: flex;
+    flex-wrap: wrap; /* Ensures cards wrap to the next line if necessary */
+    justify-content: center; /* Centers the cards */
+    line-height: 0%;
+
+  }
+  
+  .rating {
+    margin: 10px;
+    color: gold; /* Change star color */
+    display: flex;
+
+  }
+
+  .productCard{
+    margin: 10px;
+    text-align: center;
+  }
+
+  .productCard .btn {
+    background-color: green !important; /* Force green color */
+    border-color: green !important;
+    color: white;
+  }
+
+  

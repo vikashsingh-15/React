@@ -1,0 +1,64 @@
+.container {
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+.input-container {
+    margin-bottom: 20px;
+}
+
+input {
+    padding: 10px;
+    width: 250px;
+    border: 2px solid #4CAF50;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+button {
+    padding: 10px 15px;
+    background-color:teal;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* List styling */
+ul {
+    padding: 0;
+    list-style-type: none;
+    width: 10%;
+    margin: 0 auto;
+}
+
+li {
+    background: #f9f9f9;
+    margin: 8px auto;
+    padding: 100px;
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Completed task styling */
+li.done span {
+    color: red;
+    text-decoration: line-through;
+}
+
+/* Button inside list */
+li button {
+    background-color: red;
+    padding: 5px 10px;
+}
+
+li button:hover {
+    background-color: darkred;
+}
