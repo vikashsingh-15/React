@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-// import "./toDoList2.css";
+import React, { useState, useEffect } from "react";
+import "./toDoList2.css";
 
 const ToDoList = () => {
   const [toDoText, setToDoText] = useState("");
@@ -16,25 +16,35 @@ const ToDoList = () => {
   //   : []; //localStorage.getItem("todos") retrieves the stored value associated with the key "todos".
   // const [toDoItems, settoDoItems] = useState(ititialToDoItems);
 
+  useEffect(() => {
+    localStorage.setItem("todos", JSON.stringify(toDoItems));
+  }, [toDoItems]); // Runs whenever toDoItems changes the ther way to update local storage miss the last elemet of the array because it is not updated in the state yet.
+
   function handleAddTodo() {
     if (toDoText.trim() === "") return; // Prevent empty tasks
     settoDoItems([...toDoItems, { name: toDoText, status: "TODO" }]);
     setToDoText("");
-    localStorage.setItem("todos", JSON.stringify(toDoItems));
+    // localStorage.setItem("todos", JSON.stringify(toDoItems));
   }
 
   function deleteToDoItem(index) {
     const newToDoItems = [...toDoItems];
     newToDoItems[index].status = "DONE";
     settoDoItems(newToDoItems);
-    localStorage.setItem("todos", JSON.stringify(toDoItems));
+    // localStorage.setItem("todos", JSON.stringify(toDoItems));
   }
 
   function setBackToToDo(index) {
     const newToDoItems = [...toDoItems];
     newToDoItems[index].status = "TODO";
     settoDoItems(newToDoItems);
-    localStorage.setItem("todos", JSON.stringify(toDoItems));
+    // localStorage.setItem("todos", JSON.stringify(toDoItems));
+  }
+
+  function removeItem(index) {
+    const newToDoItems = [...toDoItems]; // Copy the array
+    newToDoItems.splice(index, 1); // Remove the item at the given index
+    settoDoItems(newToDoItems); // Update state
   }
 
   return (
@@ -57,19 +67,24 @@ const ToDoList = () => {
             {item.status === "TODO" ? (
               item.name
             ) : (
-              <>
-                <span style={{ color: "red", textDecoration: "line-through" }}>
-                  {item.name}
-                </span>
-                <button onClick={() => setBackToToDo(index)}>
-                  Move again to ToDo
-                </button>
-              </>
+              <span style={{ color: "red", textDecoration: "line-through" }}>
+                {item.name}
+              </span>
             )}
 
-            {item.status === "TODO" && (
-              <button onClick={() => deleteToDoItem(index)}>Done</button>
-            )}
+            <div className="btn-container">
+              {item.status === "DONE" && (
+                <button onClick={() => setBackToToDo(index)}>
+                  Move to To-Do
+                </button>
+              )}
+
+              {item.status === "TODO" && (
+                <button onClick={() => deleteToDoItem(index)}>Done</button>
+              )}
+
+              <button onClick={() => removeItem(index)}>Remove</button>
+            </div>
           </li>
         ))}
       </ul>

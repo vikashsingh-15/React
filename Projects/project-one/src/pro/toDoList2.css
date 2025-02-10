@@ -16,7 +16,7 @@ input {
 }
 
 button {
-    padding: 10px 15px;
+    padding: 8px 15px;
     background-color:teal;
     color: white;
     border: none;
@@ -32,30 +32,51 @@ button:hover {
 ul {
     padding: 0;
     list-style-type: none;
-    width: 10%;
+    width: 60%;
     margin: 0 auto;
 }
-
 li {
-    background: #f9f9f9;
-    margin: 8px auto;
-    padding: 100px;
-    display: flex; 
-    justify-content: space-between;
-    align-items: center;
-    border-radius: 5px;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+        background: #f9f9f9;
+            margin: 8px auto;
+            padding: 10px;
+            display: flex;
+            /* Keep items in a row */
+            justify-content: space-between;
+            align-items: center;
+            border-radius: 5px;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+            word-break: break-word;
+            /* Allow breaking for long words */
+            max-width: 100%;
 }
 
-/* Completed task styling */
-li.done span {
-    color: red;
-    text-decoration: line-through;
+
+li span {
+            min-width: 0;
+            word-break: break-word;
+            overflow-wrap: break-word;
+            padding-right: 10px;
 }
 
-/* Button inside list */
+/* Keeps button on the right side */
+
 li button {
     background-color: red;
+    padding: 5px 10px;
+    margin: 5px;
+    /* Space between text and button */
+    flex-shrink: 0;
+    /* Prevents button from shrinking */
+    white-space: nowrap;
+}
+
+.button-group {
+    display: flex;
+        gap: 10px;
+}
+
+li .button-group button {
+    flex-shrink: 0;
     padding: 5px 10px;
 }
 
