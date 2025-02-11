@@ -3,6 +3,7 @@ import React from "react";
 class FormClass extends React.Component {
   constructor(props) {
     super(props);
+    this.ref = React.createRef();
     this.state = {
       name: "",
       //   email: "",
@@ -19,10 +20,20 @@ class FormClass extends React.Component {
     this.setState({ name: e.target.value });
   };
 
+  componentDidMount() {
+    //documents.getElementById("input").focus();
+    this.ref.current.focus(); //focuses on the input field
+  }
+
   render() {
     return (
       <form onSubmit={this.handleSubmit}>
-        <input type="text" x={this.state.name} onChange={this.handleChange} />
+        <input
+          ref={this.ref}
+          type="text"
+          x={this.state.name}
+          onChange={this.handleChange}
+        />
         {/* 
         <input type="email" name="email" />
         <input type="password" /> 

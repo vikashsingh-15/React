@@ -6,7 +6,8 @@ import React from "react";
 // import Options from "./pro/options";
 // import LengthChecker from "./pro/lengthChecker";
 // import FormClass from "./pro/FormClass";
-import FormFunction from "./pro/FormFunction";
+// import FormFunction from "./pro/FormFunction";
+import BallRefClass from "./pro/BallRef";
 
 function App() {
   return (
@@ -21,7 +22,9 @@ function App() {
       {/* <LengthChecker /> */}
       {/* <FormClass /> */}
 
-      <FormFunction />
+      {/* <FormFunction /> */}
+
+      <BallRefClass />
     </>
   );
 }

@@ -3,7 +3,6 @@ import React from "react";
 
 const FormFunction = () => {
   const [password, setPassword] = useState("");
-
   const handleChange = (e) => {
     setPassword(e.target.value);
   };
@@ -11,7 +10,7 @@ const FormFunction = () => {
   const handleSubmit = (e) => {
     e.preventDefault(); // prevent the default behavior of the form and does not refresh the page
     // alert("Form submitted with input value =" + password);
-    alert("Form submitted with input value = " + e.target[0].value);
+    alert("Form submitted with input value = " + password);
   };
 
   return (
@@ -21,5 +20,21 @@ const FormFunction = () => {
     </form>
   );
 };
-
 export default FormFunction;
+
+// import React from "react";
+// const FormFunction = () => {
+//   const handleSubmit = (e) => {
+//     e.preventDefault(); // prevent the default behavior of the form and does not refresh the page
+//     alert("Form submitted with input value = " + e.target[0].value);
+//   };
+
+//   return (
+//     <form onSubmit={handleSubmit}>
+//       <input type="text" />
+//       <input type="submit" value="submit" />
+//     </form>
+//   );
+// };
+
+// export default FormFunction;
