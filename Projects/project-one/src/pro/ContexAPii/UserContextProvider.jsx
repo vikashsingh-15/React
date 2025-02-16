@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import UserContext from "./UserContext";
 
 const UserContextProvider = ({ children }) => {
@@ -10,3 +10,5 @@ const UserContextProvider = ({ children }) => {
     </UserContext.Provider>
   );
 };
+
+export default UserContextProvider;
