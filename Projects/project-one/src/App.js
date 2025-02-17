@@ -12,12 +12,9 @@ function App() {
     <>
       {/* <Ecomm /> */}
       {/* <Options /> */}
-
       {/* <LengthChecker /> */}
       {/* <FormClass /> */}
-
       {/* <FormFunction /> */}
-
       {/* <BallRefClass /> */}
     </>
   );
