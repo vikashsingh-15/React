@@ -1,15 +1,17 @@
-import React, { useContext } from "react";
+import React from "react";
 import "./App.css";
 
-import { ThemeContext } from "./Contex/ThemeProvider";
+import { Context } from "./Contex/ThemeProvider";
+import Profile from "./Components/Profile";
 
 function App() {
-  const context = useContext(ThemeContext);
+  const theme = Context();
   return (
     <div className="App">
       <h2>Theme Switcher</h2>
       <p>Lets break leg</p>
-      <p>My theme is {context}</p>
+      <Profile />
+      <p>My theme is {theme}</p>
     </div>
   );
 }
