@@ -35,9 +35,12 @@ import React, { createContext, useContext, useState } from "react";
 
 export const ThemeContext = createContext(false);
 
-export const Context = () => {
-  return useContext(ThemeContext);
-};
+// export const Context = () => {
+//   return useContext(ThemeContext);
+// };
+// or
+
+export const Context = () => useContext(ThemeContext);
 
 function ThemeProvider({ children }) {
   const [toggle, setToggle] = useState(false);
