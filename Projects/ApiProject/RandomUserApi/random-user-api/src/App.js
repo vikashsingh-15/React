@@ -39,6 +39,7 @@ function App() {
     const response = await axios.get("https://randomuser.me/api/");
     console.log(response.data.results[0]);
     setDetails(response.data.results); //inside  response we have data and inside that we have data and inside that we have results where actual data is stored n api
+    // setDetails(response.data.results[0]);//we can also write this way  to get only one user and store
   };
   useEffect(() => {
     fetchDetails();
