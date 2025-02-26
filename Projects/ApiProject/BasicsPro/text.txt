@@ -1,2 +1,6 @@
 api link dummmy
 https://jsonplaceholder.typicode.com/users
+
+
+for axios now
+https://randomuser.me/api
