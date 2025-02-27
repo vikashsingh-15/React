@@ -1,0 +1,19 @@
+.custom-books {
+    display: flex;
+    flex-wrap: wrap;
+    /* Allows wrapping to the next line */
+    gap: 15px;
+    /* Spacing between cards */
+
+    padding: 10px;
+
+    /* flex: 0.7; */
+    /* Takes 70% of the container */
+    justify-content: flex-start;
+
+
+    /* Aligns cards to the left */
+    align-items: flex-start;
+
+    /* background-color: black; */
+}

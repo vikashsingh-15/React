@@ -1,3 +1,20 @@
-.App {
-  text-align: center;
+.library-container {
+  display: flex;
+  width: 100%;
+  min-height: 100vh;
+  gap: 1px;
+  padding: 20px;
+}
+
+.books-section {
+  flex: 0.7;
+  /* background-color: green; */
+}
+
+.add-book-section {
+  flex: 0.3;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: teal;
 }

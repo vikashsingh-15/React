@@ -1,0 +1,52 @@
+{
+  "books": [
+    {
+      "id": "1",
+      "title": "To Kill a Mockingbird",
+      "author": "Harper Lee",
+      "publishedYear": 1960,
+      "genre": "Novel",
+      "description": "The story takes place during three years of the Great Depression in the fictional Maycomb, Alabama. This is a place where racism is deeply ingrained in the local culture. The story focuses on young Scout Finch, whose father, Atticus, is a lawyer representing"
+    },
+    {
+      "id": "2",
+      "title": "1984",
+      "author": "George Orwell",
+      "publishedYear": 1949,
+      "genre": "Dystopian",
+      "description": "The story takes place in a nightmarish dystopia, in which an ever-surveillant State enforces perfect conformity among citizens through indoctrination, fear, lies and ruthless punishment. The protagonist, Winston Smith, is a worker who secretly hates the Party."
+    },
+    {
+      "id": "3",
+      "title": "The Great Gatsby",
+      "author": "F. Scott Fitzgerald",
+      "publishedYear": 1925,
+      "genre": "Novel",
+      "description": "The story takes place in the summer of 1922. Nick Carraway, a Yale graduate and World War I veteran from the Midwest – who serves as the novel's narrator – takes a job in New York as a bond salesman. He rents a small house on Long Island, in the fictional ."
+    },
+    {
+      "id": "4",
+      "title": "The Catcher in the Rye",
+      "author": "J.D. Salinger",
+      "publishedYear": 1951,
+      "genre": "Horror",
+      "description": "The story is a first-person narrative, and is presented in the form of a long flashback. Holden Caulfield, a teenager from New York City, describes events that happened to him the previous Christmas. The story begins with Holden at Pencey Prep School on..."
+    },
+    {
+      "id": "5",
+      "title": "Moby-Dick",
+      "author": "Herman Melville",
+      "publishedYear": 1851,
+      "genre": "Novel",
+      "description": "The story follows Ishmael, a sailor aboard the whaling ship Pequod, commanded by Captain Ahab. Ahab is obsessed with seeking revenge on Moby Dick, a giant white sperm whale that on a previous voyage destroyed Ahab's ship and severed his leg."
+    },
+    {
+      "id": "6",
+      "title": "Pride and Prejudice",
+      "author": "Jane Austen",
+      "publishedYear": 1813,
+      "genre": "Romance",
+      "description": "The story charts the emotional development of the protagonist, Elizabeth Bennet, who learns the error of making hasty judgments and comes to appreciate the difference between the superficial and the essential."
+    }
+  ]
+}
