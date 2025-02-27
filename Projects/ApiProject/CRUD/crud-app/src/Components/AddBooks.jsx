@@ -116,8 +116,11 @@ export default function AddBooks() {
               {description.length}/225 characters
             </small>
 
-            <button onClick={handleGenerateDescription}>
-              Generate AI Description
+            <button
+              className="custom-ai-btn"
+              onClick={handleGenerateDescription}
+            >
+              Generate
             </button>
           </div>
           <button type="submit" className="btn btn-primary" onClick={addBook}>
