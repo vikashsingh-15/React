@@ -34,4 +34,12 @@
 
 .custom-btn-group {
     margin-top: auto; /* Push the button group to the bottom */
+    display: flex;
+    justify-content: space-between;
+}
+
+.custom-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }

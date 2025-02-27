@@ -22,8 +22,11 @@ export default function AddBooks() {
       description: description,
     };
     const url = "http://localhost:3000/books";
-    const response = await axios.post(url, book);
+    const response = await axios.post(url, book).catch((err) => {
+      console.log(err);
+    });
     console.log(response);
+    window.location.reload();
   };
 
   //this function will limit the description to 225 characters

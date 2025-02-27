@@ -9,12 +9,12 @@
       "description": "The story takes place during three years of the Great Depression in the fictional Maycomb, Alabama. This is a place where racism is deeply ingrained in the local culture. The story focuses on young Scout Finch, whose father, Atticus, is a lawyer representing"
     },
     {
-      "id": "2",
       "title": "1984",
       "author": "George Orwell",
       "publishedYear": 1949,
       "genre": "Dystopian",
-      "description": "The story takes place in a nightmarish dystopia, in which an ever-surveillant State enforces perfect conformity among citizens through indoctrination, fear, lies and ruthless punishment. The protagonist, Winston Smith, is a worker who secretly hates the Party."
+      "description": "The story takes place in a nightmarish dystopia, in which an ever-surveillant State enforces perfect conformity among citizens through indoctrination, fear, lies and ruthless punishment. The protagonist, Winston Smith, is a worker who secretly hates the Party.",
+      "id": "2"
     },
     {
       "id": "3",
@@ -39,14 +39,6 @@
       "publishedYear": 1851,
       "genre": "Novel",
       "description": "The story follows Ishmael, a sailor aboard the whaling ship Pequod, commanded by Captain Ahab. Ahab is obsessed with seeking revenge on Moby Dick, a giant white sperm whale that on a previous voyage destroyed Ahab's ship and severed his leg."
-    },
-    {
-      "id": "6",
-      "title": "Pride and Prejudice",
-      "author": "Jane Austen",
-      "publishedYear": 1813,
-      "genre": "Romance",
-      "description": "The story charts the emotional development of the protagonist, Elizabeth Bennet, who learns the error of making hasty judgments and comes to appreciate the difference between the superficial and the essential."
     }
   ]
 }

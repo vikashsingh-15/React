@@ -12,6 +12,7 @@ export default function Books({ bookprop }) {
           return (
             <Card
               key={item.id}
+              id={item.id}
               title={item.title}
               author={item.author}
               published={item.publishedYear}
