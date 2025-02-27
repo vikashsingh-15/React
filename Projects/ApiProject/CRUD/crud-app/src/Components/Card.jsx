@@ -47,7 +47,7 @@ export default function Card({
   const handleDelete = () => {
     const url = `http://localhost:3000/books/${id}`;
     axios.delete(url).then((res) => {
-      console.log(res);
+      console.log("deleted", res);
       window.location.reload();
     });
     alert("Book Deleted");

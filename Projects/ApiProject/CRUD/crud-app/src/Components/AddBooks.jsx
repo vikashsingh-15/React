@@ -2,6 +2,7 @@ import React from "react";
 import { useState } from "react";
 import axios from "axios";
 import "./add-books.css";
+import { generateDescription } from "../Utils/generateData";
 
 export default function AddBooks() {
   const [id, setId] = useState("");
@@ -27,6 +28,21 @@ export default function AddBooks() {
     });
     console.log(response);
     window.location.reload();
+  };
+
+  const handleGenerateDescription = async (e) => {
+    e.preventDefault();
+    if (!title.trim() || !author.trim()) {
+      alert("Please enter both title and author to generate a description.");
+      return;
+    }
+
+    try {
+      const aiDescription = await generateDescription(title, author); // Wait for response
+      setDescription(aiDescription); // Set description after receiving response
+    } catch (err) {
+      console.error("Error generating description:", err);
+    }
   };
 
   //this function will limit the description to 225 characters
@@ -99,6 +115,10 @@ export default function AddBooks() {
             <small className="text-muted">
               {description.length}/225 characters
             </small>
+
+            <button onClick={handleGenerateDescription}>
+              Generate AI Description
+            </button>
           </div>
           <button type="submit" className="btn btn-primary" onClick={addBook}>
             Submit

@@ -39,6 +39,14 @@
       "publishedYear": 1851,
       "genre": "Novel",
       "description": "The story follows Ishmael, a sailor aboard the whaling ship Pequod, commanded by Captain Ahab. Ahab is obsessed with seeking revenge on Moby Dick, a giant white sperm whale that on a previous voyage destroyed Ahab's ship and severed his leg."
+    },
+    {
+      "id": "565",
+      "title": "Two states",
+      "author": "Chetan Bhagat",
+      "publishedYear": "1999",
+      "genre": "Romance",
+      "description": "In a ground-breaking and unputdownable novel, Chetan Bhagat takes you on a journey through two distinct states - one where dreams are born and dashed, and another where resilient individuals fight against a system that has..."
     }
   ]
 }
