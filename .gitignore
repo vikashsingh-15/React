@@ -10,6 +10,7 @@
 # Ignore log files and temporary files across all projects
 *.log
 *.tmp
+*.env
 
 # Ignore compiled or system files
 *.pyc
