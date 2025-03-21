@@ -1,0 +1,11 @@
+.home-body {
+    text-align: center;
+    padding: 20px;
+}
+
+.home-card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
