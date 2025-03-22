@@ -2,7 +2,8 @@ import React from "react";
 import "./card.css";
 import { Link } from "react-router-dom";
 // import Details from "./details";
-// import { Routes, Route } from "react-router-dom";
+import Option1 from "./options";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 export default function Card() {
   return (
